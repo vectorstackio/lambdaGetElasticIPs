@@ -44,10 +44,9 @@ export async function handler() {
       })
     }
 
-  } catch (err) {
+  } catch {
     console.error(
-      'Failed to list Elastic IPs:',
-      err
+      'Failed to list Elastic IPs'
     )
 
     return {
